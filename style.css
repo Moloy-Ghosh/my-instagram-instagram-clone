@@ -1,0 +1,124 @@
+main{
+    margin:0 auto;
+    width:450px;
+    height:740px;
+    border:0.1px solid black;
+    background-color:#FEFEFE;
+    font-family: "Underdog", system-ui;
+}
+#hd1 img{
+    width:25px;
+    height:25px;
+}
+#hd1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:44px;
+    background-color:#FAFAFA;
+    padding:0 15px;
+}
+#hd1 h1{
+    font-family: "Story Script", sans-serif;
+    color:#262626;
+    padding-bottom:5px;
+    text-shadow: 3px 2px 5px #A60F93;
+}
+#hd1two{
+    display:flex;
+    gap:25px;
+}
+#hr1{
+    margin:0px;
+}
+#poatTime{
+    font-size:12px;
+    color:rgba(6, 4, 4, 0.51);
+}
+/* Story section design started */
+#story{
+    margin-bottom:-8px;
+}
+#story img{
+    width:60px;
+    height:60px;
+    border: 4px solid rgb(191, 64, 128);
+    border-radius:50%;
+    margin:8px;
+}
+#story p{
+    margin-top:-7px;
+    margin-left:7px;
+}
+/* Post section design started */
+#post{
+    color:262626;
+    height:510px;
+    overflow: scroll;
+}
+#bbadge{
+    width:12px;
+    height:12px;
+}
+#proimg{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+#postpppp{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+#mg{
+    font-weight:550;
+}
+#bzr{
+    font-weight:400;
+    font-size:12px;
+}
+#post{
+    margin:10px;
+}
+#post1st{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+#nightp{
+    width:100%;
+    margin: 8px 0;
+}
+#underPost img{
+    width:22px;
+    height:22px;
+}
+#underPost{
+    display:flex;
+    justify-content: space-between;
+    margin:2px 6px;
+}
+#threeIcon img{
+    margin-right:11px;
+}
+#postWritten span{
+    font-weight:550;
+}
+#cmt{
+    margin-top:-14.2px;
+    margin-left:21px;
+    font-size:13.01px;
+}
+/* Footer section started */
+footer img{
+    width:25px;
+    height:25px;
+}
+footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:21px;
+    padding:5px 13px;
+    background-color:rgba(255, 244, 244, 1);
+}
