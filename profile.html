@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My profile</title>
+  <link rel=stylesheet href="style.css">
+  <!-- For font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <!-- Font awosome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        
+        <div id="hd1">
+            <div>
+                    <img src="icon/shop.png"/>
+            </div>
+            <h1 class="usname"><p>bonofool.kashbon.821</p></h1>
+            <div>
+                    <img src="icon/reel.png"/>
+            </div>
+        </div>
+
+        <hr id="hr1"/>
+        
+
+
+
+        
+        <!-- Story section started from here -->
+         <div id="headOfProfile">
+            <div id="story" class="profilePicture">
+                <img id="sPicture" src="icon/8192.jpg"/>
+            </div>
+
+            <div id="we">
+                <h1>Ami & Valobasha</h1>
+                <div id="they">
+                    <p><span>3</span><br/>Post</p>
+                    <p><span id="million">0</span><br/>Follower</p>
+                    <p><span>0</span><br/><span id="frnd">Friend</span></p>
+                </div>
+            </div>
+         </div>
+
+         <div id="proriborton">
+            <button id="changeProfilePic" onClick="changeKoro()">Change profile picture</button>
+            <button>Edit your profile</button>
+         </div>
+         <div id="profileIcons">
+            <img id="roundmsg" src="icon/roundMsg.png"/>
+            <img onClick="hiddenSection()" src="icon/love.png"/>
+            <img src="icon/save.png"/>
+         </div>
+         <hr/>
+
+
+
+
+
+
+
+         <!-- Post section started from here -->
+          <div id="profilePost">
+            <img class="jhapsa" src="icon/Screenshot_২০২৬০১২৪-১৪৪৪২৪.png"/>
+            <img class="jhapsa"  src="icon/IMG_২০২৬০১২৩_১১২৫৫২.jpg"/>
+            <img class="jhapsa"  src="icon/hiCar.png"/>
+            <img id="motherLove" src="icon/motherLove.png"/>
+          </div>
+
+
+
+          <hr/>
+          <footer>
+            <a href="index.html"><img src="icon/home.png"/></a>
+            <img src="icon/search.png"/>
+            <img src="icon/add.png"/>
+            <img src="icon/love.png"/>
+            <img src="icon/me.png"/>
+          </footer>
+    </main>
+
+</body>
+<script>
+    var i=0;
+    var mainPicture=document.getElementById('sPicture');
+    var changeProfilePic=document.getElementById('changeProfilePic');
+    function changeKoro(){
+        i=i+1;
+        if(i==1){
+            mainPicture.src="icon/IMG_২০২৬০১২৩_১১০২০৪~2.jpg";
+        }
+        else if(i==2){
+            mainPicture.src="icon/cars.png";
+        }
+        else if(i==3){
+            mainPicture.src="icon/8192.jpg";
+        }
+        else if(i==4){
+            i=0;
+            mainPicture.src="icon/bus.png";
+        }
+    }
+
+    // hidden section
+    motherLove=document.getElementById('motherLove');
+    japsha=document.getElementsByClassName('jhapsa');
+    they=document.getElementById('they');
+    million=document.getElementById('million');
+    frnd=document.getElementById('frnd');
+    function hiddenSection(){
+        motherLove.style.display='block';
+        japsha[0].style.opacity='0.3';
+        japsha[1].style.opacity='0.3';
+        japsha[2].style.opacity='0.3';
+        they.style.opacity='0.4';
+        million.innerText="132M"
+        frnd.innerText="Feiends"
+    }
+
+    
+
+</script>
+</html>
